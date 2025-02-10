@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <div>
+            <label for="user">Username</label>
+            <input id="user" type="text" name="username" autofocus minlength="5" maxlength="20" required>
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="Email" value="o@o.com" readonly>
+        </div>
+        <div>
+            
+            <input id="tok" type="hidden" name="token" value="b92f1fc2fce391ad7af633723afd3055">
+        </div>
+        <div>
+            <input type="reset"value="Empty">
+            <input type="submit"value="Send">
+        </div>
+        <br><br>
+        <div>
+            <input id="log" type="checkbox" name="skills" value="Logincal Thinking">
+            <label for="log" >Logincal Thinking</label>
+        </div> 
+        <div>
+            <input id="pro" type="checkbox" name="skills" value="Problem Solving" checked>
+            <label for="pro" >Problem Solving</label>
+        </div>
+        <div>
+            <input id="pla" type="checkbox" name="skills" value="Planning">
+            <label for="pla" >Planning</label>
+        </div>     
+        <div>
+            <input id="ana" type="checkbox" name="skills" value="Analysis">
+            <label for="ana" >Analysis</label>
+        </div> 
+        <div>
+            <input id="adv" type="checkbox" name="skills" value="Advanced">
+            <label for="adv" >Advanced</label>
+        </div> 
+        <br><br>
+        <div>
+            <input id="back" type="radio" name="job" value="Back-End">
+            <label for="back" >Back-End</label>
+        </div>
+        <div>
+            <input id="front" type="radio" name="job" value="Front-End" checked>
+            <label for="front" >Front-End</label>
+        </div>
+        <div>
+            <input id="business" type="radio" name="job" value="Business Analyst">
+            <label for="business" >Business Analyst</label>
+        </div>
+        <br><br>
+        <label for="book">Choose Book:</label>
+        <select name="book" id="book">
+        <optgroup label="PHP">
+            <option value="1">v5.0</option>
+            <option value="2">v7.0</option>
+            <option value="3">v8.0</option>
+        </optgroup>
+        <optgroup label="Python">
+            <option value="4" selected>v2.0</option>
+            <option value="5">v3.0</option>
+            <option value="6">v3.9</option>
+        </optgroup>
+        </select>
+        <br><br>
+        <textarea name="subject" cols="50" rows="50" placeholder="Write Here Why You Want To Learn Programming "></textarea>
+    </form>
+</body>
+</html>
