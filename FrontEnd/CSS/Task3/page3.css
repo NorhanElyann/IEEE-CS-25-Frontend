@@ -1,0 +1,38 @@
+.Shape{
+    display: inline-block;
+    padding: 40px;
+    margin: 40px;
+}
+.Shape1{
+    border: 5px  solid  red;
+    outline: 5px solid black;
+}
+.Shape2{
+    border-width: 5px;;
+    border-color: blue green;
+    border-style: solid;
+    outline: 5px solid black;
+}
+.Shape3{
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+    outline: 5px solid black;
+}
+.element{
+    width: 400px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    padding: 10px;
+}
+.element-2{
+    visibility: hidden;
+}
+.element-1{
+    border-left: 5px solid #e91e63;
+    outline: 10px solid #e0e0e0;
+}
+.element-3{
+    border-left: 5px solid #009688;
+    outline: 10px solid #e0e0e0;
+}
