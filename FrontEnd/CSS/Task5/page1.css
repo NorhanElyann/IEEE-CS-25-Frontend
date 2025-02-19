@@ -1,0 +1,62 @@
+.p1 {
+    position: relative;
+    background: #eee;
+    padding: 10px 15px;
+    margin-left: 80px;
+    display: float;
+    width: 400px;
+}
+
+
+.p1::before {
+    content: attr(data-person); 
+    background: #eee;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: -90px;
+    top: 0;
+}
+
+.p1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: white;
+    border-width: 10px;
+    border-style:solid;
+    border-color: transparent rgb(216, 75, 99) transparent transparent;
+} 
+.p2{
+    position: relative;
+    background: #eee;
+    padding: 10px 15px;
+    margin-left: 80px;
+    display: float;
+    width: 400px;
+    counter-increment: num;
+}
+.p2::after {
+    content: ""; 
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -7px;
+    top: 0;
+    background-color: rgb(216, 75, 99);
+}
+.p2::before {
+    content: counter(num);
+    background-color: rgb(216, 75, 99);
+    padding: 20px;
+    position: absolute;
+    left: -48px;
+    top: 0;
+    height: 100%;
+}
+
