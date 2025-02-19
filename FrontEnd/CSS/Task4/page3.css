@@ -1,0 +1,22 @@
+div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #b3b3b3;
+    color: black;
+    }
+    
+    .normal {
+        background-color: rgb(179, 179, 179);
+    }
+    
+    .one {
+        background-color: rgba(179, 179, 179, 0.1);
+    }
+    
+    .two {
+        background-color: rgba(179, 179, 179, 0.1);
+        color: rgba(0, 0, 0, 0.3);
+    }
