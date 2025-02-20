@@ -1,0 +1,154 @@
+.fle{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: orangered;
+    position: relative;   
+}
+.fle::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: -1;
+    right:-5px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.fle::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: -1;
+    left: -5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.one,
+.two,
+.three,
+.four{
+    width: 100px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.one{
+    background-color: blue;
+    order: 2;
+    
+    
+}
+.two{
+    background-color: red;
+    order:3;
+    align-self: flex-end;
+    
+}
+.three{
+    background-color: yellow;
+    order:4
+}
+.four{
+    background-color: green;
+    order: 1;
+    align-self: flex-end;
+}
+.page{
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    margin:10px;
+    width: 10%;
+    height: 20px;
+}
+.links{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin:10px;
+    justify-content: flex-end;
+    background-color: #ddd;
+    align-items: center;
+    width: 80%;
+    height: 20px;
+}
+li{
+    margin: 10px;
+    list-style: none;
+}
+.main-area{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    background-color: #ddd;
+    padding: 10px;
+    margin:10px;
+    width: 70%;
+    height: 300px;
+}
+.sidebar{
+    display: flex;
+    background-color: #ddd;
+    padding: 10px;
+    margin:10px;
+    width: 20%;
+    height: 300px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ddd;
+
+}
