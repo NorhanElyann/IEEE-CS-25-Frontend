@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1080px;
+    height: 650px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background: #fff;
+    margin: auto;
+}
+.left h2{
+    margin: auto;  
+    text-transform: uppercase;  
+    font-size: 34px;
+    font-weight: 500px;
+    text-align: center;
+}
+.left p{
+    margin-top: 10px;
+    margin-bottom:40px;
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: center;
+    line-height: 21px;
+    color :#636364;
+}
+.left .form{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-color: #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+.options a{
+    color: black; 
+    text-decoration: none;
+}
+
+.left button{
+    width: 100%;
+    padding: 10px;
+    background: #EA454C;
+    color: white;
+    border-radius: 10px ;
+    border-color: #EA454C;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: white;
+}
+.google-signin img {
+    width: 20px;
+    margin-right: 10px;
+}
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 500px;
+}
+
+.signup-text a {
+    color: red;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500px;
+}
+.signup-text span{
+    font-size: 10px;
+    font-weight: 500px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+.right img {
+    width: 100%;
+    height: auto;
+}

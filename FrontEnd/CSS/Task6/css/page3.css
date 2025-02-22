@@ -1,0 +1,71 @@
+.elzero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.elzero::before, 
+.elzero::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    transition: transform 0.5s linear;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+}
+
+
+.elzero::before {
+    border-top-color: #d81b60;
+    border-bottom-color: #d81b60;
+    border-right-color: #d81b60;
+    transform: rotate(4deg);
+    z-index: -1;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+}
+
+.elzero::after {
+    border-top-color: #2196f3;
+    border-bottom-color: #2196f3;
+    border-left-color: #2196f3;
+    transform: rotate(-4deg);
+    inset: -20px;
+    z-index: -2;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+}
+.elzero:hover::before {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.elzero:hover::after {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+}

@@ -1,0 +1,157 @@
+
+body, .layout {
+    height: 100vh;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: 
+    "header header"
+    "section aside"
+    "footer footer";
+}
+header {
+    background-color: #039be5;
+    grid-area: header;
+    color: white;
+    padding: 10px;
+}
+section {
+    background-color: #f4511e;
+    grid-area: section;
+    color: white;
+    padding: 10px;
+}
+
+aside {
+background-color: #546e7a;
+grid-area: aside;
+color: white;
+padding: 10px;
+}
+
+footer {
+background-color: #00897b;
+grid-area: footer;
+color: white;
+padding: 10px;
+}
+header::before {
+    content: "Header";
+}
+
+section::before {
+content: "Section";
+}
+
+aside::before {
+content: "Aside";
+}
+
+footer::before {
+content: "Footer";
+}
+
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 10;
+    grid-template-rows: 6;
+    gap: 10px;
+}
+.box {
+    background-color: #2196F3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.one{
+    grid-column: 1/span 10;
+    grid-row-start: 6;
+    
+}
+.two{
+    grid-column: 1/span 7;
+    grid-row-start: 2;
+}
+.three{
+    grid-column: 8/span 3;
+    grid-row-start: 2;
+}
+.four{
+    grid-column: 1/span 4;
+    grid-row-start: 3;
+}
+.five{
+    grid-column: 5/span 6;
+    grid-row:3 /span 3 ;
+}
+.six{
+    grid-column: 1/span 4;
+    grid-row-start: 4;
+}
+.seven{
+    grid-column: 1/span 4;
+    grid-row-start: 5;
+}
+.eight{
+    grid-column: 1/span 10;
+    grid-row-start: 1;
+}
+
+
+.grid2{
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+}
+.box2 {
+    background-color: #d81b60;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+
+}
+.one1{
+    grid-column: 1/span 5;
+    grid-row-start: 1;
+
+}
+.two2{
+    grid-column: 6/span 5;
+    grid-row-start: 1;
+}
+.three3{
+    grid-column: 1/span 5;
+    grid-row-start: 5;
+}
+.four4{
+    grid-column: 6/span 5;
+    grid-row-start: 5;
+}
