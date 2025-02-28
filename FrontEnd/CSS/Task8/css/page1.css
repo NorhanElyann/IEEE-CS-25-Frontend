@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.animate1{
+    width: 50px;
+    height: 50px;
+    border: 4px solid #26C6DA;
+    border-radius: 50%;
+    border-left-color: transparent;
+    position: relative;
+    animation: rotate ;
+    -webkit-animation: rotate 1s linear infinite;
+    margin: 100px;
+    
+}
+
+.animate1::before, .animate1::after {
+    content: "";
+    position: absolute;
+    border: 4px solid transparent;
+    border-radius: 50%;
+}
+
+.animate1::before {
+    width: 70%;
+    height: 70%;
+    left: 3.5px;
+    top: 3.5px;
+    border-color: #E91E63;
+    border-right-color: transparent;
+
+}
+
+.animate1::after {
+    width: 130%;
+    height: 130%;
+    right: -11.5px;
+    bottom: -11.5px;
+    border-color: #FF7043;
+    border-top-color: transparent;
+}
+
+.animate1:hover {
+    animation-play-state: paused;
+}
+
+
+.animate2 {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #FF7043;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    position: relative;
+    animation: rotate 1s linear 0.2s infinite;
+    animation-play-state: paused;
+}
+
+
+.animate2::before, .animate2::after {
+    content: "";
+    position: absolute;
+    border: 4px solid transparent;
+    border-radius: 50%;
+}
+
+
+.animate2::before {
+    width: 70%;
+    height: 70%;
+    left: 3.5px;
+    top: 3.5px;
+    border-color: #26C6DA;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear 0s infinite;
+    animation-play-state: paused;
+}
+
+.animate2::after {
+    width: 130%;
+    height: 130%;
+    right: -11.5px;
+    bottom: -11.5px;
+    border-color: black;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear .5s infinite;
+    animation-play-state: paused;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.animate2:hover, 
+.animate2:hover::before, 
+.animate2:hover::after {
+    animation-play-state: running;
+}
