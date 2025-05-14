@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "author": "Ahmed",
+        "category": "Technology",
+        "title": "The Future of AI",
+        "content": "Artificial Intelligence is transforming the world in many ways."
+    },
+    {
+        "id": 2,
+        "author": "Rawan",
+        "category": "Health",
+        "title": "Healthy Eating Tips",
+        "content": "Eating healthy can improve your life significantly."
+    },
+    {
+        "id": 3,
+        "author": "Omar",
+        "category": "Education",
+        "title": "Online Learning Benefits",
+        "content": "Learning online allows flexibility and access to a wide range of resources..."
+    },
+    {
+        "id": 4,
+        "author": "Norhan",
+        "category": "Travel",
+        "title": "Top 5 Places to Visit in 2025",
+        "content": "If you're planning your next vacation, check out these amazing destinations..."
+    },
+    {
+        "id": 5,
+        "author": "Mahmoud ",
+        "category": "Finance",
+        "title": "Saving Money Effectively",
+        "content": "Managing your money wisely is the key to financial stability..."
+    }
+]
