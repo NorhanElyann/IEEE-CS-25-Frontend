@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative overflow-hidden">
+
+        <!-- Background gray-->
+        <div class="absolute top-0 left-0 w-[57%]  lg:h-3/4 bg-[#f4f4f4] rounded-br-[200px] z-0"></div>
+        <div class="relative z-10 text-[#333] mx-auto p-8 lg:p-10 max-w-7xl">
+
+            <!-- Hero Section -->
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Left: Content -->
+                <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <h2 class="font-semibold text-[35px] lg:text-[50px]">
+                        Bring <span class="text-[#437223]">GREEN</span> to<br>
+                        your home and<br>
+                        make you feel <span class="text-[#437223]">BETTER</span>
+                    </h2>
+                    <p class="font-regular text-[20px] my-4 lg:text-[24px]">
+                        Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit. Cursus imperdiet sed id <br>
+                        elementum. Quam vel aliquam sit.
+                    </p>
+                    <div class="flex gap-10">
+                        <div>
+                            <h4 class="font-semibold text-[22px]">124K</h4>
+                            <p>Lorem ipsum<br> consectetur</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[22px]">126K</h4>
+                            <p>Lorem ipsum<br> consectetur</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[22px]">78K</h4>
+                            <p>Lorem ipsum<br> consectetur</p>
+                        </div>
+                    </div>
+                    <button class="font-medium text-[25px] bg-[#437223] text-white py-2 px-10 my-10 rounded-3xl">
+                        Find your plant
+                    </button>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <img src="./imgs/plants.png" alt="plant" class="w-full h-auto object-contain max-w-[800px]">
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 place-content-between mt-16">
+                <div class="border rounded-lg p-4 flex gap-4 items-center">
+                    <img src="./imgs/plant1.jpg" alt="plant1" class="w-20 h-20 rounded-full">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+                <div class="border rounded-lg p-4 flex gap-4 items-center">
+                    <img src="./imgs/plant2.jpg" alt="plant2" class="w-20 h-20 rounded-full">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+                <div class="border rounded-lg p-4 flex gap-4 items-center">
+                    <img src="./imgs/plant3.jpg" alt="plant3" class="w-20 h-20 rounded-full">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
